@@ -4,6 +4,21 @@ Header‑only C++20 event bus for lightweight, synchronous event dispatch to reg
 
 ## Usage
 
+Copy the header file into your own project or pull in the project as a CMake dependency using FetchContent.
+
+```
+include(FetchContent)
+
+FetchContent_Declare(
+    eventbus
+    GIT_REPOSITORY https://github.com/tailhwip/eventbus.git
+)
+
+FetchContent_MakeAvailable(eventbus)
+
+target_link_libraries(TARGET_NAME PRIVATE EventBus)
+```
+
 Initialize an event bus. Note that each event bus maintains its own registry; make sure that application components that depend on each other are using the same instance.
 
 ```cpp
