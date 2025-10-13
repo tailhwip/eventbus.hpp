@@ -8,8 +8,6 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
-        "CMAKE_C_COMPILER": "clang-cl",
-        "CMAKE_C_COMPILER_FRONTEND_VARIANT": "MSVC",
         "CMAKE_CXX_COMPILER": "clang-cl",
         "CMAKE_CXX_COMPILER_FRONTEND_VARIANT": "MSVC"
       },
@@ -26,7 +24,6 @@
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug",
         "CMAKE_EXPORT_COMPILE_COMMANDS": "ON",
-        "CMAKE_C_COMPILER": "clang",
         "CMAKE_CXX_COMPILER": "clang++"
       },
       "condition": {
