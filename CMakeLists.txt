@@ -13,7 +13,7 @@ target_compile_features(EventBus INTERFACE cxx_std_20)
 if(WIN32)
     target_compile_options(
         EventBus
-        INTERFACE /EHs- /GR- /WAll /WX /permissive-
+        INTERFACE /EHs- /GR- /W4 /WX /permissive-
     )
 else()
     target_compile_options(
